@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { AudioService } from '@/audio/AudioService';
 import { applyResult, currentSave, useGame } from '@/stores/gameStore';
 import { selectTool, togglePanel, useUi } from '@/stores/uiStore';
@@ -32,6 +33,7 @@ export function Toolbar() {
   const tool = useUi((s) => s.tool);
   const panel = useUi((s) => s.panel?.id);
   const hasHose = useGame((s) => (s.save ? isEquipmentOn(s.save, 'hose') : false));
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className={styles.bar} aria-label="Инструменты и меню">
@@ -44,6 +46,7 @@ export function Toolbar() {
             aria-pressed={tool === t.id}
             onClick={() => {
               AudioService.play('ui');
+              setMenuOpen(false);
               selectTool(tool === t.id ? 'hand' : t.id);
             }}
           >
@@ -64,8 +67,20 @@ export function Toolbar() {
             <span className={styles.label}>Всё полить</span>
           </button>
         )}
+        <button
+          type="button"
+          className={`${styles.btn} ${styles.menuToggle} ${menuOpen ? styles.on : ''}`}
+          aria-expanded={menuOpen}
+          onClick={() => {
+            AudioService.play('ui');
+            setMenuOpen((open) => !open);
+          }}
+        >
+          <AssetImg assetKey="ui/menu" size={30} className={menuOpen ? styles.menuIconOn : undefined} />
+          <span className={styles.label}>Меню</span>
+        </button>
       </div>
-      <div className={styles.group} aria-label="Меню">
+      <div className={`${styles.group} ${styles.menus} ${menuOpen ? styles.menusOpen : ''}`} aria-label="Меню">
         {MENUS.map((m) => (
           <button
             key={m.id}
@@ -73,6 +88,7 @@ export function Toolbar() {
             className={`${styles.btn} ${panel === m.id ? styles.on : ''}`}
             onClick={() => {
               AudioService.play('ui');
+              setMenuOpen(false);
               togglePanel(m.id);
             }}
           >

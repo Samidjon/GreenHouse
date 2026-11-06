@@ -1014,6 +1014,36 @@
    "width": 120,
    "height": 96
   },
+  "pots/old_clay_1": {
+   "path": "/assets/pots/old_clay_1.svg",
+   "width": 120,
+   "height": 96
+  },
+  "pots/old_clay_2": {
+   "path": "/assets/pots/old_clay_2.svg",
+   "width": 120,
+   "height": 96
+  },
+  "pots/old_clay_3": {
+   "path": "/assets/pots/old_clay_3.svg",
+   "width": 120,
+   "height": 96
+  },
+  "pots/old_clay_4": {
+   "path": "/assets/pots/old_clay_4.svg",
+   "width": 120,
+   "height": 96
+  },
+  "pots/old_clay_5": {
+   "path": "/assets/pots/old_clay_5.svg",
+   "width": 120,
+   "height": 96
+  },
+  "pots/old_clay_6": {
+   "path": "/assets/pots/old_clay_6.svg",
+   "width": 120,
+   "height": 96
+  },
   "decor/wicker_basket": {
    "path": "/assets/decor/wicker_basket.svg",
    "width": 80,
@@ -1316,6 +1346,11 @@
   },
   "ui/close": {
    "path": "/assets/ui/close.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/menu": {
+   "path": "/assets/ui/menu.svg",
    "width": 64,
    "height": 64
   },

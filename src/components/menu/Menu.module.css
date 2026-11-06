@@ -230,3 +230,9 @@
 .dedicationButton:active {
   transform: translateY(2px);
 }
+
+@media (max-width: 620px) {
+  .card {
+    zoom: 1.1;
+  }
+}

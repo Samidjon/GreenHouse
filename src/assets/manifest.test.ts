@@ -2,7 +2,7 @@ import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { assetEntry, assetKeyExists, assetKeys } from './manifest';
-import { DECORATIONS, EQUIPMENT, FERTILIZERS, POTS, TOOLS, UPGRADES } from '@/data/catalog';
+import { DECORATIONS, EQUIPMENT, FERTILIZERS, OLD_POT_VARIANTS, POTS, TOOLS, UPGRADES } from '@/data/catalog';
 import { PLANTS } from '@/data/plants';
 import { GROWTH_STAGES } from '@/types/game';
 import { getItemInfo } from '@/data/items';
@@ -41,6 +41,7 @@ describe('asset manifest', () => {
       ...TOOLS.map((x) => x.icon),
     ];
     for (const key of keys) expect(assetKeyExists(key), key).toBe(true);
+    for (let n = 1; n <= OLD_POT_VARIANTS; n++) expect(assetKeyExists(`pots/old_clay_${n}`), `old pot ${n}`).toBe(true);
   });
 
   it('resolves item icons through the registry', () => {

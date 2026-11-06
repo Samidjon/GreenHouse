@@ -32,3 +32,10 @@
     top: calc(max(8px, var(--safe-top)) + 104px);
   }
 }
+
+@media (max-width: 620px) {
+  .note {
+    top: calc(max(8px, var(--safe-top)) + 122px);
+    font-size: 19px;
+  }
+}

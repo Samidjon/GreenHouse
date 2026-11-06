@@ -2,14 +2,14 @@ import Phaser from 'phaser';
 import { WORLD } from '@/data/world';
 
 /** The narrowest stretch of world a phone should show, so three pots fit across. */
-const MIN_VIEW_WIDTH = 520;
+const MIN_VIEW_WIDTH = 480;
 
 /** World height that must stay above the toolbar: the roof down to the lower row of pots. */
 const LOWEST_POTS_Y = 600;
 
 /** Screen pixels the toolbar takes up; it wraps onto more rows as the window narrows. */
 function toolbarHeight(screenWidth: number): number {
-  if (screenWidth <= 620) return 256;
+  if (screenWidth <= 620) return 214;
   if (screenWidth <= 1160) return 190;
   return 100;
 }

@@ -107,3 +107,11 @@
     padding-bottom: calc(18px + var(--safe-bottom));
   }
 }
+
+/* On a phone, panels scale up as a whole: text, icons and buttons together. */
+@media (max-width: 620px) {
+  .panel,
+  .wide {
+    zoom: 1.14;
+  }
+}

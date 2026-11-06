@@ -71,11 +71,15 @@
   }
 }
 
-/* A phone: one panel, five wide, three rows. */
+.menuToggle {
+  display: none;
+}
+
+/* A phone: large tools in two rows, with the sections opening above from Menu. */
 @media (max-width: 620px) {
   .bar {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2px;
     padding: 4px;
     pointer-events: auto;
@@ -88,13 +92,46 @@
     display: contents;
   }
 
+  .menuToggle {
+    display: grid;
+  }
+
+  .menuIconOn {
+    filter: brightness(0.35);
+  }
+
+  .menus {
+    display: none;
+  }
+
+  .menusOpen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(100% + 6px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    max-width: none;
+    padding: 4px;
+    border-radius: 14px;
+  }
+
   .btn {
     width: 100%;
     min-width: 0;
-    height: 72px;
+    height: 94px;
+  }
+
+  .btn img {
+    width: 48px;
+    height: 48px;
   }
 
   .label {
-    font-size: 14px;
+    font-size: clamp(14px, 4.5vw, 18px);
+    line-height: 1.05;
+    white-space: normal;
+    text-align: center;
   }
 }

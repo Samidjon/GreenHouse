@@ -2,7 +2,8 @@ import Phaser from 'phaser';
 import { assetEntry } from '@/assets/manifest';
 import { CONFIG } from '@/data/config';
 import { plantById } from '@/data/plants';
-import { WORLD } from '@/data/world';
+import { OLD_POT_VARIANTS } from '@/data/catalog';
+import { ALL_SLOTS, WORLD } from '@/data/world';
 import type { SlotDef } from '@/data/world';
 import { isReady, stageForGrowth, stageIndexForGrowth } from '@/systems/growth';
 import { DEPTH, POT_SOIL_OFFSET, SPRITE_RASTER_SCALE } from '../constants';
@@ -36,7 +37,7 @@ export class PlantSlotView {
     this.baseDepth = DEPTH.plants + (def.y > 450 ? 1 : 0);
     const d = this.baseDepth;
     this.selection = scene.add.ellipse(def.x, def.y - 2, 124, 26, 0xfff2bd, 0.55).setDepth(d - 0.1).setVisible(false);
-    this.pot = scene.add.image(def.x, def.y + 2, 'pots/old_clay').setOrigin(0.5, 1).setScale(DOWN * POT_SCALE).setDepth(d);
+    this.pot = scene.add.image(def.x, def.y + 2, 'pots/old_clay_1').setOrigin(0.5, 1).setScale(DOWN * POT_SCALE).setDepth(d);
     this.bar = scene.add.graphics().setDepth(d + 0.3);
     this.needsWater = scene.add.image(def.x + 50, def.y - 100, 'ui/water').setScale(DOWN * 0.9).setDepth(d + 0.4).setVisible(false);
     this.readySpark = scene.add.image(def.x + 46, def.y - 114, 'ui/sparkle').setScale(DOWN * 1).setDepth(d + 0.4).setVisible(false);
@@ -62,7 +63,9 @@ export class PlantSlotView {
   setPot(pot: PotDef): void {
     if (this.potId === pot.id) return;
     this.potId = pot.id;
-    this.pot.setTexture(pot.sprite);
+    // Starting pots take turns through their colours, so each spot keeps its own.
+    const colour = (ALL_SLOTS.findIndex((s) => s.id === this.def.id) % OLD_POT_VARIANTS) + 1;
+    this.pot.setTexture(pot.id === 'old_clay' ? `pots/old_clay_${colour}` : pot.sprite);
   }
 
   /** Reconciles with the save. Cheap when nothing visible changed. */

@@ -268,3 +268,10 @@
     transform: translateY(18px);
   }
 }
+
+@media (max-width: 620px) {
+  .sheet {
+    zoom: 1.12;
+    max-height: calc((100% - 120px) / 1.12);
+  }
+}

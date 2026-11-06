@@ -134,3 +134,30 @@
     padding-right: 8px;
   }
 }
+
+@media (max-width: 620px) {
+  .plate {
+    height: 54px;
+    padding: 0 10px 0 7px;
+    gap: 5px;
+  }
+
+  .plate img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .value {
+    font-size: 21px;
+  }
+
+  .levelBadge {
+    width: 42px;
+    height: 42px;
+    font-size: 21px;
+  }
+
+  .popover {
+    font-size: 19px;
+  }
+}

@@ -30,8 +30,11 @@ export const FERTILIZERS: FertilizerDef[] = [
   { id: 'moon_feed', name: 'Лунная подкормка', description: 'Сварена в полнолуние. На два часа удваивает скорость роста.', price: gems(1), unlockLevel: 8, growthMultiplier: 2, durationSec: 2 * 60 * 60, instantHealth: 20, instantMoisture: 0, icon: 'items/fert_moon_feed' },
 ];
 
+/** The starting pot comes in this many colours, shown in turn along the greenhouse. */
+export const OLD_POT_VARIANTS = 6;
+
 export const POTS: PotDef[] = [
-  { id: 'old_clay', name: 'Щербатый жёлтый горшок', description: 'Достался вместе с теплицей. Земля в нём быстро сохнет, но держится.', price: coins(5), unlockLevel: 1, drainMultiplier: 1, mutationMultiplier: 1, sprite: 'pots/old_clay' },
+  { id: 'old_clay', name: 'Щербатый цветной горшок', description: 'Достался вместе с теплицей: с трещинами, зато яркий. Земля в нём быстро сохнет, но держится.', price: coins(5), unlockLevel: 1, drainMultiplier: 1, mutationMultiplier: 1, sprite: 'pots/old_clay' },
   { id: 'terracotta', name: 'Синий горшок', description: 'Только что из печи. Земля остаётся влажной примерно на 10% дольше.', price: coins(40), unlockLevel: 2, drainMultiplier: 0.9, mutationMultiplier: 1, sprite: 'pots/terracotta' },
   { id: 'glazed', name: 'Глазурованный горшок', description: 'Глубокая бирюзовая глазурь держит влагу: земля сохнет на 25% медленнее.', price: coins(160), unlockLevel: 6, drainMultiplier: 0.75, mutationMultiplier: 1, sprite: 'pots/glazed' },
   { id: 'self_watering', name: 'Горшок с автополивом', description: 'Скрытый резервуар вдвое замедляет высыхание земли.', price: coins(600), unlockLevel: 11, drainMultiplier: 0.5, mutationMultiplier: 1, sprite: 'pots/self_watering' },

@@ -74,6 +74,7 @@
 
 @media (max-width: 620px) {
   .hint {
-    bottom: calc(232px + var(--safe-bottom));
+    bottom: calc(212px + var(--safe-bottom));
+    font-size: 19px;
   }
 }

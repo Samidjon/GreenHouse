@@ -69,3 +69,17 @@
     top: calc(max(8px, var(--safe-top)) + 104px);
   }
 }
+
+@media (max-width: 620px) {
+  .stack {
+    top: calc(max(8px, var(--safe-top)) + 122px);
+  }
+
+  .text strong {
+    font-size: 20px;
+  }
+
+  .text small {
+    font-size: 18px;
+  }
+}
