@@ -12,8 +12,8 @@
 .panel {
   display: flex;
   flex-direction: column;
-  width: min(760px, 100%);
-  max-height: min(720px, 100%);
+  width: min(900px, 100%);
+  max-height: 100%;
   border-radius: 18px;
   background: var(--paper);
   border: 3px solid var(--wood-deep);
@@ -23,7 +23,7 @@
 }
 
 .wide {
-  width: min(920px, 100%);
+  width: min(1140px, 100%);
 }
 
 .header {
@@ -43,12 +43,12 @@
 }
 
 .titles h2 {
-  font-size: 23px;
+  font-size: 29px;
   letter-spacing: 0.005em;
 }
 
 .subtitle {
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
   opacity: 0.86;
 }
@@ -56,8 +56,8 @@
 .close {
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
+  width: 54px;
+  height: 54px;
   border: 0;
   border-radius: 10px;
   background: #f3e5c3;
@@ -105,5 +105,13 @@
 
   .body {
     padding-bottom: calc(18px + var(--safe-bottom));
+  }
+}
+
+/* On a phone, panels scale up as a whole: text, icons and buttons together. */
+@media (max-width: 620px) {
+  .panel,
+  .wide {
+    zoom: 1.14;
   }
 }

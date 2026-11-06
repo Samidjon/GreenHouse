@@ -16,8 +16,8 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  height: 40px;
-  padding: 0 11px 0 8px;
+  height: 52px;
+  padding: 0 13px 0 9px;
   border: 0;
   border-radius: 12px;
   color: var(--ink);
@@ -27,12 +27,12 @@
 
 .value {
   font-weight: 800;
-  font-size: 15.5px;
+  font-size: 20px;
   font-variant-numeric: tabular-nums;
 }
 
 .of {
-  font-size: 12.5px;
+  font-size: 16px;
   color: var(--ink-faint);
 }
 
@@ -44,12 +44,12 @@
 .levelBadge {
   display: grid;
   place-items: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   font-family: var(--font-display-stack);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   color: #fdf8e6;
   background: linear-gradient(#67964f, #47743f);
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.3);
@@ -57,7 +57,7 @@
 
 .xpTrack {
   width: clamp(44px, 9vw, 96px);
-  height: 8px;
+  height: 10px;
   border-radius: 99px;
   background: rgb(90 70 40 / 0.2);
   overflow: hidden;
@@ -86,19 +86,19 @@
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
-  width: min(280px, calc(100vw - 24px));
+  width: min(370px, calc(100vw - 24px));
   padding: 12px 14px;
   border-radius: 12px;
   pointer-events: auto;
   background: var(--paper);
   box-shadow: 0 2px 0 var(--wood), 0 10px 26px rgb(40 25 10 / 0.34);
-  font-size: 13.5px;
+  font-size: 17px;
   animation: pop 0.16s ease;
 }
 
 .popover strong {
   font-family: var(--font-display-stack);
-  font-size: 17px;
+  font-size: 22px;
 }
 
 .popover ul {
@@ -109,7 +109,7 @@
 
 .popoverNote {
   color: var(--ink-faint);
-  font-size: 12.5px;
+  font-size: 16px;
 }
 
 @keyframes pop {
@@ -121,16 +121,43 @@
 
 @media (max-width: 560px) {
   .plate {
-    height: 36px;
+    height: 44px;
     padding: 0 8px 0 6px;
     gap: 4px;
   }
 
   .value {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .level {
     padding-right: 8px;
+  }
+}
+
+@media (max-width: 620px) {
+  .plate {
+    height: 54px;
+    padding: 0 10px 0 7px;
+    gap: 5px;
+  }
+
+  .plate img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .value {
+    font-size: 21px;
+  }
+
+  .levelBadge {
+    width: 42px;
+    height: 42px;
+    font-size: 21px;
+  }
+
+  .popover {
+    font-size: 19px;
   }
 }

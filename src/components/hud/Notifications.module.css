@@ -1,12 +1,12 @@
 .stack {
   position: absolute;
-  top: calc(max(8px, var(--safe-top)) + 50px);
+  top: calc(max(8px, var(--safe-top)) + 62px);
   right: 8px;
   z-index: 60;
   display: grid;
   justify-items: end;
   gap: 6px;
-  width: min(320px, calc(100vw - 16px));
+  width: min(420px, calc(100vw - 16px));
   pointer-events: none;
 }
 
@@ -32,12 +32,12 @@
 }
 
 .text strong {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 800;
 }
 
 .text small {
-  font-size: 12.5px;
+  font-size: 16px;
   color: var(--ink-soft);
 }
 
@@ -66,6 +66,20 @@
 
 @media (max-width: 560px) {
   .stack {
-    top: calc(max(8px, var(--safe-top)) + 88px);
+    top: calc(max(8px, var(--safe-top)) + 104px);
+  }
+}
+
+@media (max-width: 620px) {
+  .stack {
+    top: calc(max(8px, var(--safe-top)) + 122px);
+  }
+
+  .text strong {
+    font-size: 20px;
+  }
+
+  .text small {
+    font-size: 18px;
   }
 }

@@ -48,7 +48,7 @@ body {
   background: #2b3f30;
   color: var(--ink);
   font-family: var(--font-body-stack);
-  font-size: 15px;
+  font-size: 19px;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   overscroll-behavior: none;

@@ -9,9 +9,9 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { PLANTS } from '../src/data/plants.ts';
-import { DECORATIONS, EQUIPMENT, POTS } from '../src/data/catalog.ts';
+import { DECORATIONS, EQUIPMENT, OLD_POT_VARIANTS, POTS } from '../src/data/catalog.ts';
 import { allStages, BASE_X, BASE_Y, paintPlant, paintSeedPacket, SPRITE_H, SPRITE_W } from './art/plants.mjs';
-import { ITEM_ICONS, UI_ICONS, EQUIP_ART, paintBeam, paintButterfly, paintDecoration, paintEquipment, paintGlow, paintItemIcon, paintLeafParticle, paintParticle, paintPot, paintTank, paintUiIcon } from './art/props.mjs';
+import { ITEM_ICONS, UI_ICONS, EQUIP_ART, paintBeam, paintButterfly, paintDecoration, paintEquipment, paintGlow, paintItemIcon, paintLeafParticle, paintOldPotVariant, paintParticle, paintPot, paintTank, paintUiIcon } from './art/props.mjs';
 import { paintBackground, paintCloud, paintHills } from './art/backgrounds.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -40,6 +40,7 @@ for (const plant of PLANTS) {
 }
 
 for (const pot of POTS) emit(pot.sprite, `pots/${pot.id}.svg`, paintPot(pot.id), 120, 96);
+for (let n = 1; n <= OLD_POT_VARIANTS; n++) emit(`pots/old_clay_${n}`, `pots/old_clay_${n}.svg`, paintOldPotVariant(n), 120, 96);
 for (const d of DECORATIONS) emit(d.sprite, `decor/${d.id}.svg`, paintDecoration(d.id, d.width, d.height), d.width, d.height);
 for (const e of EQUIPMENT) emit(e.sprite, `equipment/${e.id}.svg`, paintEquipment(e.id), EQUIP_ART[e.id].w, EQUIP_ART[e.id].h);
 emit('world/tank', 'world/tank.svg', paintTank(), 110, 180);

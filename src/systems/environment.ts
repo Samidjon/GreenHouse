@@ -56,7 +56,9 @@ export function getEnvironment(ts: number, ctx: EnvironmentContext): Environment
   const sunT = (hours - 5.5) / 15;
   const sun = sunT > 0 && sunT < 1 ? Math.sin(sunT * Math.PI) : 0;
 
-  const weather = weatherAt(ts, ctx.seed);
+  // There's no sunny weather in the dark: a sunny slot at night is just a clear one.
+  const forecast = weatherAt(ts, ctx.seed);
+  const weather = forecast === 'sunny' && sun <= 0 ? 'clear' : forecast;
   const house = expansionByLevel(ctx.level);
 
   const light = sun * CONFIG.light.weather[weather] * house.glassClarity + 0.05 + (ctx.lamps ? CONFIG.light.lampBonus : 0);
@@ -73,7 +75,7 @@ export function getEnvironment(ts: number, ctx: EnvironmentContext): Environment
 }
 
 export const WEATHER_INFO: Record<WeatherKind, { label: string; rule: string }> = {
-  clear: { label: 'Ясно', rule: 'Обычный приятный день. Ничего особенного.' },
+  clear: { label: 'Ясно', rule: 'Обычная приятная погода. Ничего особенного.' },
   sunny: { label: 'Солнечно', rule: 'Растения растут на 5% быстрее. Земля сохнет на 10% быстрее.' },
   cloudy: { label: 'Пасмурно', rule: 'В теплице меньше света: светолюбивым растениям может понадобиться лампа.' },
   rain: { label: 'Тихий дождь', rule: 'Земля сохнет на 40% медленнее, а бак наполняется на 50% быстрее.' },

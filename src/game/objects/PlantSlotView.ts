@@ -2,7 +2,8 @@ import Phaser from 'phaser';
 import { assetEntry } from '@/assets/manifest';
 import { CONFIG } from '@/data/config';
 import { plantById } from '@/data/plants';
-import { WORLD } from '@/data/world';
+import { OLD_POT_VARIANTS } from '@/data/catalog';
+import { ALL_SLOTS, WORLD } from '@/data/world';
 import type { SlotDef } from '@/data/world';
 import { isReady, stageForGrowth, stageIndexForGrowth } from '@/systems/growth';
 import { DEPTH, POT_SOIL_OFFSET, SPRITE_RASTER_SCALE } from '../constants';
@@ -36,10 +37,10 @@ export class PlantSlotView {
     this.baseDepth = DEPTH.plants + (def.y > 450 ? 1 : 0);
     const d = this.baseDepth;
     this.selection = scene.add.ellipse(def.x, def.y - 2, 124, 26, 0xfff2bd, 0.55).setDepth(d - 0.1).setVisible(false);
-    this.pot = scene.add.image(def.x, def.y + 2, 'pots/old_clay').setOrigin(0.5, 1).setScale(DOWN * POT_SCALE).setDepth(d);
+    this.pot = scene.add.image(def.x, def.y + 2, 'pots/old_clay_1').setOrigin(0.5, 1).setScale(DOWN * POT_SCALE).setDepth(d);
     this.bar = scene.add.graphics().setDepth(d + 0.3);
-    this.needsWater = scene.add.image(def.x + 44, def.y - 96, 'ui/water').setScale(DOWN * 0.5).setDepth(d + 0.4).setVisible(false);
-    this.readySpark = scene.add.image(def.x + 40, def.y - 110, 'ui/sparkle').setScale(DOWN * 0.56).setDepth(d + 0.4).setVisible(false);
+    this.needsWater = scene.add.image(def.x + 50, def.y - 100, 'ui/water').setScale(DOWN * 0.9).setDepth(d + 0.4).setVisible(false);
+    this.readySpark = scene.add.image(def.x + 46, def.y - 114, 'ui/sparkle').setScale(DOWN * 1).setDepth(d + 0.4).setVisible(false);
     scene.tweens.add({ targets: this.needsWater, y: '-=7', duration: 780, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
     scene.tweens.add({ targets: this.readySpark, y: '-=9', angle: 20, duration: 950, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
   }
@@ -62,7 +63,9 @@ export class PlantSlotView {
   setPot(pot: PotDef): void {
     if (this.potId === pot.id) return;
     this.potId = pot.id;
-    this.pot.setTexture(pot.sprite);
+    // Starting pots take turns through their colours, so each spot keeps its own.
+    const colour = (ALL_SLOTS.findIndex((s) => s.id === this.def.id) % OLD_POT_VARIANTS) + 1;
+    this.pot.setTexture(pot.id === 'old_clay' ? `pots/old_clay_${colour}` : pot.sprite);
   }
 
   /** Reconciles with the save. Cheap when nothing visible changed. */
@@ -165,13 +168,13 @@ export class PlantSlotView {
     this.lastBarKey = key;
     this.bar.clear();
     if (ready) return;
-    const w = 66;
+    const w = 96;
     const x = this.def.x - w / 2;
     const y = this.def.y + 7;
     this.bar.fillStyle(0x2a2118, 0.55);
-    this.bar.fillRoundedRect(x - 1.5, y - 1.5, w + 3, 8, 4);
+    this.bar.fillRoundedRect(x - 2, y - 2, w + 4, 14, 6);
     this.bar.fillStyle(plant.moisture < CONFIG.moisture.thirsty ? 0xd9a441 : 0x8fc25e, 1);
-    this.bar.fillRoundedRect(x, y, Math.max(5, w * plant.growth), 5, 2.5);
+    this.bar.fillRoundedRect(x, y, Math.max(10, w * plant.growth), 10, 5);
   }
 
   private clearPlant(): void {

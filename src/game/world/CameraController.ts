@@ -2,7 +2,17 @@ import Phaser from 'phaser';
 import { WORLD } from '@/data/world';
 
 /** The narrowest stretch of world a phone should show, so three pots fit across. */
-const MIN_VIEW_WIDTH = 520;
+const MIN_VIEW_WIDTH = 480;
+
+/** World height that must stay above the toolbar: the roof down to the lower row of pots. */
+const LOWEST_POTS_Y = 600;
+
+/** Screen pixels the toolbar takes up; it wraps onto more rows as the window narrows. */
+function toolbarHeight(screenWidth: number): number {
+  if (screenWidth <= 620) return 214;
+  if (screenWidth <= 1160) return 190;
+  return 100;
+}
 
 /**
  * Keeps the side-view framing right at any window shape: landscape fits the
@@ -23,7 +33,8 @@ export class CameraController {
     const c = this.camera;
     const fitHeight = c.height / WORLD.height;
     const fitPhone = c.width / MIN_VIEW_WIDTH;
-    let zoom = Math.min(fitHeight, fitPhone);
+    const fitAboveToolbar = (c.height - toolbarHeight(c.width)) / LOWEST_POTS_Y;
+    let zoom = Math.min(fitHeight, fitPhone, fitAboveToolbar);
     // A very wide window: zoom in so no empty space shows beside the building.
     zoom = Math.max(zoom, c.width / this.worldW);
     c.setZoom(zoom);
@@ -45,9 +56,10 @@ export class CameraController {
     const hi = this.worldW - half;
     this.targetMidX = hi <= lo ? this.worldW / 2 : Phaser.Math.Clamp(this.targetMidX, lo, hi);
 
-    // Extra height (portrait) is shared out as sky above and floor below.
+    // Extra height (portrait) goes to the sky, keeping the pots just above the toolbar.
     const viewH = c.height / c.zoom;
-    const midY = viewH > WORLD.height ? WORLD.height - viewH * 0.42 : WORLD.height / 2;
+    const viewBottom = LOWEST_POTS_Y + toolbarHeight(c.width) / c.zoom;
+    const midY = viewH > WORLD.height ? viewBottom - viewH / 2 : WORLD.height / 2;
     c.scrollY = midY - c.height / 2;
     c.scrollX = this.targetMidX - c.width / 2;
   }
