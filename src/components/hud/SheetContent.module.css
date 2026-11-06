@@ -2,10 +2,10 @@
 .sheet {
   position: absolute;
   z-index: 25;
-  top: calc(max(8px, var(--safe-top)) + 50px);
+  top: calc(max(8px, var(--safe-top)) + 62px);
   right: 8px;
-  width: 340px;
-  max-height: calc(100% - 150px);
+  width: 440px;
+  max-height: calc(100% - 78px);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -32,7 +32,7 @@
 }
 
 .sheetHead h3 {
-  font-size: 19px;
+  font-size: 24px;
 }
 
 .grow {
@@ -52,8 +52,8 @@
 .x {
   display: grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
+  width: 50px;
+  height: 50px;
   flex: none;
   border: 0;
   border-radius: 9px;
@@ -73,7 +73,7 @@
   gap: 7px;
   padding: 7px 10px;
   border-radius: 10px;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
   background: #fdf2c8;
 }
@@ -100,14 +100,14 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 11.5px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--ink-soft);
 }
 
 .needs dd {
   margin: 1px 0 0;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 800;
 }
 
@@ -116,12 +116,12 @@
 }
 
 .modifiers h4 {
-  font-size: 14.5px;
+  font-size: 19px;
   margin-bottom: 3px;
 }
 
 .modifiers p {
-  font-size: 13px;
+  font-size: 17px;
   color: var(--ink-soft);
 }
 
@@ -131,7 +131,7 @@
   padding: 0;
   display: grid;
   gap: 3px;
-  font-size: 13px;
+  font-size: 17px;
   color: var(--ink-soft);
 }
 
@@ -189,7 +189,7 @@
   align-items: center;
   gap: 9px;
   width: 100%;
-  min-height: 54px;
+  min-height: 70px;
   padding: 4px 10px 4px 6px;
   border: 0;
   border-radius: 11px;
@@ -204,7 +204,7 @@
 }
 
 .seedRow small {
-  font-size: 12.5px;
+  font-size: 16px;
 }
 
 .count {
@@ -220,7 +220,7 @@
 
 .lead {
   font-family: var(--font-display-stack);
-  font-size: 19px;
+  font-size: 24px;
 }
 
 .readyList {
@@ -255,9 +255,9 @@
     top: auto;
     left: 8px;
     right: 8px;
-    bottom: calc(142px + var(--safe-bottom));
+    bottom: calc(8px + var(--safe-bottom));
     width: auto;
-    max-height: 58%;
+    max-height: calc(100% - 120px);
     animation-name: inUp;
   }
 }

@@ -61,7 +61,7 @@ export function Toolbar() {
             }}
           >
             <AssetImg assetKey="equipment/hose" size={30} />
-            <span className={styles.label}>Полить всё</span>
+            <span className={styles.label}>Всё полить</span>
           </button>
         )}
       </div>

@@ -70,11 +70,11 @@ export class Effects {
     const label = this.scene.add
       .text(x, y, text, {
         fontFamily: 'Georgia, serif',
-        fontSize: '24px',
+        fontSize: '38px',
         fontStyle: 'bold',
         color,
         stroke: '#3b2f22',
-        strokeThickness: 5,
+        strokeThickness: 7,
       })
       .setOrigin(0.5)
       .setDepth(DEPTH.floatingText);

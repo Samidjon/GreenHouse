@@ -31,8 +31,8 @@ export const FERTILIZERS: FertilizerDef[] = [
 ];
 
 export const POTS: PotDef[] = [
-  { id: 'old_clay', name: 'Щербатый глиняный горшок', description: 'Достался вместе с теплицей. Земля в нём быстро сохнет, но держится.', price: coins(5), unlockLevel: 1, drainMultiplier: 1, mutationMultiplier: 1, sprite: 'pots/old_clay' },
-  { id: 'terracotta', name: 'Терракотовый горшок', description: 'Только что из печи. Земля остаётся влажной примерно на 10% дольше.', price: coins(40), unlockLevel: 2, drainMultiplier: 0.9, mutationMultiplier: 1, sprite: 'pots/terracotta' },
+  { id: 'old_clay', name: 'Щербатый жёлтый горшок', description: 'Достался вместе с теплицей. Земля в нём быстро сохнет, но держится.', price: coins(5), unlockLevel: 1, drainMultiplier: 1, mutationMultiplier: 1, sprite: 'pots/old_clay' },
+  { id: 'terracotta', name: 'Синий горшок', description: 'Только что из печи. Земля остаётся влажной примерно на 10% дольше.', price: coins(40), unlockLevel: 2, drainMultiplier: 0.9, mutationMultiplier: 1, sprite: 'pots/terracotta' },
   { id: 'glazed', name: 'Глазурованный горшок', description: 'Глубокая бирюзовая глазурь держит влагу: земля сохнет на 25% медленнее.', price: coins(160), unlockLevel: 6, drainMultiplier: 0.75, mutationMultiplier: 1, sprite: 'pots/glazed' },
   { id: 'self_watering', name: 'Горшок с автополивом', description: 'Скрытый резервуар вдвое замедляет высыхание земли.', price: coins(600), unlockLevel: 11, drainMultiplier: 0.5, mutationMultiplier: 1, sprite: 'pots/self_watering' },
   { id: 'brass', name: 'Старинная латунная ваза', description: 'Растения в ней на 50% чаще дают редкие сорта. Никто не знает почему.', price: gems(3), unlockLevel: 14, drainMultiplier: 0.8, mutationMultiplier: 1.5, sprite: 'pots/brass' },

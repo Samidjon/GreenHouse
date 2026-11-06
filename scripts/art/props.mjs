@@ -3,19 +3,21 @@ import { at, circle, darken, doc, ellipse, f, grad, leaf, lighten, line, mix, pa
 
 // --- pots: 120 x 96, base centred at (60, 92), soil line at y = 92 - 62 = 30 ----------
 
+const POT_OUTLINE = 'stroke="#24170d" stroke-width="3.5" stroke-linejoin="round"';
+
 function potShape(color, { rim = true, chip = false, band = null, gauge = false, flare = 7 } = {}) {
   const dark = darken(color, 0.35);
   const pale = lighten(color, 0.3);
   const bx = 34;
   const tx = 44;
   let s = shadowEllipse(60, 92, 42, 5, 0.22);
-  s += path(`M${60 - tx} 34 L${60 - bx} 88 Q60 96 ${60 + bx} 88 L${60 + tx} 34Z`, color);
+  s += path(`M${60 - tx} 34 L${60 - bx} 88 Q60 96 ${60 + bx} 88 L${60 + tx} 34Z`, color, POT_OUTLINE);
   s += path(`M${60 + 12} 34 L${60 + tx} 34 L${60 + bx} 88 Q${60 + 22} 93 ${60 + 8} 93Z`, dark, 'opacity="0.42"');
   s += path(`M${60 - tx + 5} 38 L${60 - bx + 3} 82 L${60 - bx + 11} 84 L${60 - tx + 15} 38Z`, pale, 'opacity="0.35"');
   if (band) s += path(`M${60 - tx + 3} 56 L${60 + tx - 3} 56 L${60 + tx - 6} 66 L${60 - tx + 6} 66Z`, band);
   if (gauge) s += rect(66, 48, 9, 26, '#e6f2f6', 'rx="4"') + rect(68, 58, 5, 14, '#5fb4d6', 'rx="2"');
   if (rim) {
-    s += path(`M${60 - tx - flare} 26 L${60 + tx + flare} 26 L${60 + tx + 3} 42 L${60 - tx - 3} 42Z`, lighten(color, 0.08));
+    s += path(`M${60 - tx - flare} 26 L${60 + tx + flare} 26 L${60 + tx + 3} 42 L${60 - tx - 3} 42Z`, lighten(color, 0.08), POT_OUTLINE);
     s += path(`M${60 + 14} 26 L${60 + tx + flare} 26 L${60 + tx + 3} 42 L${60 + 12} 42Z`, dark, 'opacity="0.36"');
     s += path(`M${60 - tx - 3} 42 L${60 + tx + 3} 42 L${60 + tx + 1} 45 L${60 - tx - 1} 45Z`, dark, 'opacity="0.5"');
   }
@@ -28,23 +30,23 @@ function potShape(color, { rim = true, chip = false, band = null, gauge = false,
 }
 
 function brassUrn() {
-  const c = '#c49a3f';
+  const c = '#e0b02c';
   let s = shadowEllipse(60, 92, 40, 5, 0.25);
   s += path('M42 92 L78 92 L72 80 L48 80Z', darken(c, 0.2));
-  s += path('M20 30 C14 56 34 80 48 80 L72 80 C86 80 106 56 100 30Z', c);
+  s += path('M20 30 C14 56 34 80 48 80 L72 80 C86 80 106 56 100 30Z', c, POT_OUTLINE);
   s += path('M66 30 L100 30 C106 56 86 80 72 80 L62 80Z', darken(c, 0.34), 'opacity="0.42"');
   s += path('M30 34 C26 52 36 68 46 74 C40 60 38 46 40 34Z', '#fff0b4', 'opacity="0.45"');
-  s += path('M12 26 L108 26 L102 38 L18 38Z', lighten(c, 0.12)) + path('M18 38 L102 38 L100 41 L20 41Z', darken(c, 0.4), 'opacity="0.6"');
+  s += path('M12 26 L108 26 L102 38 L18 38Z', lighten(c, 0.12), POT_OUTLINE) + path('M18 38 L102 38 L100 41 L20 41Z', darken(c, 0.4), 'opacity="0.6"');
   s += line('M22 54 Q60 66 98 54', darken(c, 0.4), 1.4, 'opacity="0.55"');
   s += ellipse(60, 27, 46, 6, '#3f2a1c') + ellipse(60, 28, 41, 4.2, '#54392a');
   return s;
 }
 
 export const POT_ART = {
-  old_clay: () => potShape('#a9745a', { chip: true }),
-  terracotta: () => potShape('#c96f42'),
-  glazed: () => potShape('#3f8a8f', { band: '#e8dcc0' }),
-  self_watering: () => potShape('#e7e2d3', { gauge: true, flare: 4 }),
+  old_clay: () => potShape('#f4c430', { chip: true }),
+  terracotta: () => potShape('#2f86d1'),
+  glazed: () => potShape('#17b3a3', { band: '#fff4d6' }),
+  self_watering: () => potShape('#f7f4ea', { gauge: true, flare: 4 }),
   brass: brassUrn,
 };
 

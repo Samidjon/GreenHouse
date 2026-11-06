@@ -18,8 +18,6 @@
   gap: 2px;
   padding: 4px;
   max-width: 100%;
-  overflow-x: auto;
-  scrollbar-width: none;
   border-radius: 14px;
   background: linear-gradient(#7a5733, #5f4227);
   box-shadow: 0 3px 0 var(--wood-deep), 0 5px 14px rgb(30 20 8 / 0.34), inset 0 1px 0 rgb(255 255 255 / 0.2);
@@ -30,10 +28,10 @@
   display: grid;
   justify-items: center;
   align-content: center;
-  gap: 1px;
+  gap: 2px;
   flex: none;
-  width: 66px;
-  height: 58px;
+  width: 82px;
+  height: 78px;
   border: 0;
   border-radius: 10px;
   color: #f6ecd2;
@@ -57,71 +55,46 @@
 }
 
 .label {
-  font-size: 11.5px;
+  font-size: 15px;
   font-weight: 800;
   line-height: 1.1;
   white-space: nowrap;
 }
 
 .key {
-  position: absolute;
-  top: 3px;
-  right: 4px;
-  font: 700 9.5px var(--font-body-stack);
-  opacity: 0.55;
+  display: none;
 }
 
-/* Touch screens don't have these keys. */
-@media (hover: none) {
-  .key {
-    display: none;
-  }
-}
-
-@media (max-width: 860px) {
+@media (max-width: 1160px) {
   .bar {
     justify-content: center;
   }
-
-  .btn {
-    width: 52px;
-    height: 52px;
-  }
-
-  .btn img {
-    width: 26px;
-    height: 26px;
-  }
-
-  .label {
-    font-size: 10.5px;
-  }
-
-  .key {
-    display: none;
-  }
 }
 
-/* Seven buttons should fit a phone's width with no sideways scrolling. */
-@media (max-width: 480px) {
-  .btn {
-    width: calc((100vw - 34px) / 7);
-    min-width: 44px;
+/* A phone: one panel, five wide, three rows. */
+@media (max-width: 620px) {
+  .bar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    padding: 4px;
+    pointer-events: auto;
+    border-radius: 14px;
+    background: linear-gradient(#7a5733, #5f4227);
+    box-shadow: 0 3px 0 var(--wood-deep), 0 5px 14px rgb(30 20 8 / 0.34);
   }
 
-  .label {
-    font-size: 9.5px;
-  }
-}
-
-/* Russian labels are long: keep every word inside its button on a phone. */
-@media (max-width: 480px) {
   .group {
-    gap: 0;
-    padding: 4px 2px;
+    display: contents;
+  }
+
+  .btn {
+    width: 100%;
+    min-width: 0;
+    height: 72px;
   }
 
   .label {
-    font-size: 10px;
+    font-size: 14px;
   }
 }

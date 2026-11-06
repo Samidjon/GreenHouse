@@ -46,10 +46,12 @@ export function skyColors(env: Environment): { top: string; bottom: string } {
   return { top: css(top), bottom: css(bottom) };
 }
 
-/** How dark the interior should be: 0 at noon, about 0.62 at midnight. */
+/** How dark the interior should be: 0 at noon, about 0.28 at midnight. */
 export function interiorDarkness(env: Environment): number {
-  const weather = env.weather === 'rain' ? 0.12 : env.weather === 'cloudy' ? 0.07 : 0;
-  return Math.min(0.66, (1 - Math.min(1, env.sun * 1.7)) * 0.6 + weather);
+  // Kept gentle: the game runs on the real clock, and players with poor eyesight
+  // must still see their plants clearly at midnight.
+  const weather = env.weather === 'rain' ? 0.06 : env.weather === 'cloudy' ? 0.03 : 0;
+  return Math.min(0.32, (1 - Math.min(1, env.sun * 1.7)) * 0.28 + weather);
 }
 
 /** Warm tint strength in the low-sun hours. */

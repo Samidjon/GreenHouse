@@ -185,6 +185,13 @@ describe('environment', () => {
     }
   });
 
+  it('never calls it sunny at night', () => {
+    const base = new Date(2027, 0, 15, 1, 0).getTime();
+    for (let seed = 0; seed < 200; seed++) {
+      expect(getEnvironment(base, { ...environmentContext(fresh()), seed }).weather).not.toBe('sunny');
+    }
+  });
+
   it('every weather state occurs', () => {
     const seen = new Set<string>();
     for (let i = 0; i < 400; i++) seen.add(weatherAt(T0 + i * CONFIG.time.weatherSlotSec * 1000, 42));

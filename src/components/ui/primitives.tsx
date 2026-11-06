@@ -8,11 +8,15 @@ import { formatNumber } from '@/utils/format';
 import type { Price, Rarity } from '@/types/game';
 import styles from './primitives.module.css';
 
+/** All icons are drawn this much larger than their nominal size, for easier reading. */
+const ICON_SCALE = 1.25;
+
 export function AssetImg({ assetKey, size, alt = '', className }: { assetKey: string; size: number; alt?: string; className?: string }) {
+  const px = Math.round(size * ICON_SCALE);
   // Items from a newer content update may have no art in this build.
   const src = assetKeyExists(assetKey) ? assetUrl(assetKey) : assetUrl('ui/sprout');
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src={src} width={size} height={size} alt={alt} draggable={false} className={`${styles.asset} ${className ?? ''}`} />;
+  return <img src={src} width={px} height={px} alt={alt} draggable={false} className={`${styles.asset} ${className ?? ''}`} />;
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

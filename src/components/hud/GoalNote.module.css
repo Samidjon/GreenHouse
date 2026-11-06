@@ -1,17 +1,17 @@
 .note {
   position: absolute;
-  top: calc(max(8px, var(--safe-top)) + 50px);
+  top: calc(max(8px, var(--safe-top)) + 62px);
   left: 8px;
   z-index: 18;
   display: flex;
   align-items: center;
   gap: 7px;
-  max-width: min(330px, calc(100vw - 16px));
+  max-width: min(440px, calc(100vw - 16px));
   padding: 7px 12px 7px 8px;
   border-radius: 3px 12px 12px 12px;
   background: #fbf3d6;
   box-shadow: 0 2px 5px rgb(40 25 10 / 0.28);
-  font-size: 13.5px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1.25;
   color: var(--ink);
@@ -29,6 +29,6 @@
 /* The HUD can take two rows on a phone. */
 @media (max-width: 560px) {
   .note {
-    top: calc(max(8px, var(--safe-top)) + 88px);
+    top: calc(max(8px, var(--safe-top)) + 104px);
   }
 }

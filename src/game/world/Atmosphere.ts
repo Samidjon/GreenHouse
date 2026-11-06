@@ -242,7 +242,7 @@ export class Atmosphere {
 
   /** Night strength, for things that glow. */
   get nightAmount(): number {
-    return this.lastEnv ? Math.min(1, interiorDarkness(this.lastEnv) / 0.5) : 0;
+    return this.lastEnv ? Math.min(1, interiorDarkness(this.lastEnv) / 0.24) : 0;
   }
 
   update(env: Environment, time: number, dt: number, camera: Phaser.Cameras.Scene2D.Camera): void {

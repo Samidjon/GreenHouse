@@ -4,12 +4,12 @@
 }
 
 .heading {
-  font-size: 18px;
+  font-size: 23px;
   margin-bottom: 8px;
 }
 
 .muted {
-  font-size: 13.5px;
+  font-size: 17px;
   color: var(--ink-soft);
 }
 
@@ -17,7 +17,7 @@
   margin: 6px 0;
   padding: 8px 11px;
   border-radius: 9px;
-  font-size: 13.5px;
+  font-size: 17px;
   font-weight: 700;
   color: #7a3226;
   background: #f4d9c8;
@@ -35,7 +35,7 @@
 
 .grow small {
   color: var(--ink-soft);
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .flexGap {
@@ -45,8 +45,8 @@
 /* Shop cards */
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  gap: 9px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 10px;
 }
 
 .card {
@@ -82,17 +82,17 @@
 }
 
 .cardTitle h4 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .cardText {
-  font-size: 13px;
+  font-size: 17px;
   color: var(--ink-soft);
   line-height: 1.33;
 }
 
 .cardDetail {
-  font-size: 12.5px;
+  font-size: 16px;
   font-weight: 800;
   color: var(--leaf-deep);
 }
@@ -107,20 +107,20 @@
 }
 
 .owned {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--ink-faint);
 }
 
 .lockText {
-  font-size: 12.5px;
+  font-size: 16px;
   font-weight: 800;
   color: var(--ink-faint);
   text-align: right;
 }
 
 .installed {
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 800;
   color: var(--leaf);
 }
@@ -137,13 +137,13 @@
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-size: 13.5px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--ink-soft);
 }
 
 .select {
-  min-height: 34px;
+  min-height: 44px;
   padding: 3px 8px;
   border: 0;
   border-radius: 8px;
@@ -154,7 +154,7 @@
 
 .split {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 290px;
+  grid-template-columns: minmax(0, 1fr) 370px;
   gap: 12px;
   align-items: start;
 }
@@ -164,7 +164,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
   gap: 7px;
 }
 
@@ -197,7 +197,7 @@
   padding: 0 5px;
   min-width: 20px;
   border-radius: 99px;
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
   color: #fdf8e6;
   background: var(--wood);
@@ -220,7 +220,7 @@
 .unknownMark {
   position: absolute;
   font-family: var(--font-display-stack);
-  font-size: 25px;
+  font-size: 32px;
   color: var(--ink-soft);
 }
 
@@ -237,11 +237,11 @@
 }
 
 .detail h3 {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .latin {
-  font-size: 13px;
+  font-size: 17px;
   color: var(--ink-soft);
   margin-top: -5px;
 }
@@ -256,7 +256,7 @@
 .chip {
   padding: 1px 8px;
   border-radius: 99px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   background: rgb(120 90 40 / 0.14);
 }
@@ -276,19 +276,19 @@
 }
 
 .facts dt {
-  font-size: 11.5px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--ink-faint);
 }
 
 .facts dd {
   margin: 0;
-  font-size: 13.5px;
+  font-size: 17px;
   font-weight: 800;
 }
 
 .mutations {
-  font-size: 13px;
+  font-size: 17px;
   color: var(--ink-soft);
 }
 
@@ -297,7 +297,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 6px;
 }
 
@@ -305,7 +305,7 @@
   padding: 5px 9px;
   border-radius: 9px;
   background: var(--paper-deep);
-  font-size: 12.5px;
+  font-size: 16px;
 }
 
 .milestones b,
@@ -363,7 +363,7 @@
 }
 
 .stage h3 {
-  font-size: 18px;
+  font-size: 23px;
 }
 
 .stageBuilt {
@@ -381,25 +381,25 @@
   display: grid;
   place-items: center;
   flex: none;
-  width: 36px;
-  height: 36px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   font-family: var(--font-display-stack);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 23px;
   color: #fdf8e6;
   background: var(--wood);
 }
 
 .tagline {
-  font-size: 13.5px;
+  font-size: 17px;
   font-style: italic;
   color: var(--ink-soft);
   margin-bottom: 3px;
 }
 
 .stageMeta {
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--leaf-deep);
 }
@@ -407,7 +407,7 @@
 .unlocks {
   margin: 5px 0;
   padding-left: 19px;
-  font-size: 13px;
+  font-size: 17px;
   color: var(--ink-soft);
 }
 
@@ -418,7 +418,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
 }
 
@@ -444,25 +444,25 @@
   gap: 8px;
   min-height: 34px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .check input {
-  width: 19px;
-  height: 19px;
+  width: 26px;
+  height: 26px;
   accent-color: var(--leaf);
 }
 
 .sliders {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 6px 18px;
 }
 
 .slider {
   display: grid;
   gap: 1px;
-  font-size: 13.5px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--ink-soft);
 }
@@ -488,15 +488,15 @@
   cursor: pointer;
   min-height: 30px;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .shortcuts {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 4px 12px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 6px 12px;
   margin: 0;
-  font-size: 13.5px;
+  font-size: 17px;
 }
 
 .shortcuts > div {
@@ -515,7 +515,7 @@
   min-width: 26px;
   padding: 1px 6px;
   border-radius: 5px;
-  font: 700 12px var(--font-body-stack);
+  font: 700 15px var(--font-body-stack);
   text-align: center;
   background: var(--paper-deep);
   box-shadow: 0 1px 0 var(--paper-edge), inset 0 0 0 1px var(--paper-edge);
