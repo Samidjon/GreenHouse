@@ -1,0 +1,1408 @@
+{
+ "version": 1,
+ "generated": true,
+ "entries": {
+  "plants/basil/SEED": {
+   "path": "/assets/plants/basil/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/basil/SPROUT": {
+   "path": "/assets/plants/basil/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/basil/SEEDLING": {
+   "path": "/assets/plants/basil/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/basil/GROWING": {
+   "path": "/assets/plants/basil/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/basil/MATURE": {
+   "path": "/assets/plants/basil/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/basil/HARVESTABLE": {
+   "path": "/assets/plants/basil/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/basil": {
+   "path": "/assets/seeds/basil.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/mint/SEED": {
+   "path": "/assets/plants/mint/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/mint/SPROUT": {
+   "path": "/assets/plants/mint/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/mint/SEEDLING": {
+   "path": "/assets/plants/mint/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/mint/GROWING": {
+   "path": "/assets/plants/mint/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/mint/MATURE": {
+   "path": "/assets/plants/mint/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/mint/HARVESTABLE": {
+   "path": "/assets/plants/mint/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/mint": {
+   "path": "/assets/seeds/mint.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/radish/SEED": {
+   "path": "/assets/plants/radish/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/radish/SPROUT": {
+   "path": "/assets/plants/radish/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/radish/SEEDLING": {
+   "path": "/assets/plants/radish/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/radish/GROWING": {
+   "path": "/assets/plants/radish/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/radish/MATURE": {
+   "path": "/assets/plants/radish/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/radish/HARVESTABLE": {
+   "path": "/assets/plants/radish/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/radish": {
+   "path": "/assets/seeds/radish.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/marigold/SEED": {
+   "path": "/assets/plants/marigold/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/marigold/SPROUT": {
+   "path": "/assets/plants/marigold/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/marigold/SEEDLING": {
+   "path": "/assets/plants/marigold/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/marigold/GROWING": {
+   "path": "/assets/plants/marigold/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/marigold/MATURE": {
+   "path": "/assets/plants/marigold/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/marigold/HARVESTABLE": {
+   "path": "/assets/plants/marigold/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/marigold": {
+   "path": "/assets/seeds/marigold.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/lettuce/SEED": {
+   "path": "/assets/plants/lettuce/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/lettuce/SPROUT": {
+   "path": "/assets/plants/lettuce/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/lettuce/SEEDLING": {
+   "path": "/assets/plants/lettuce/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/lettuce/GROWING": {
+   "path": "/assets/plants/lettuce/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/lettuce/MATURE": {
+   "path": "/assets/plants/lettuce/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/lettuce/HARVESTABLE": {
+   "path": "/assets/plants/lettuce/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/lettuce": {
+   "path": "/assets/seeds/lettuce.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/chamomile/SEED": {
+   "path": "/assets/plants/chamomile/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/chamomile/SPROUT": {
+   "path": "/assets/plants/chamomile/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/chamomile/SEEDLING": {
+   "path": "/assets/plants/chamomile/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/chamomile/GROWING": {
+   "path": "/assets/plants/chamomile/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/chamomile/MATURE": {
+   "path": "/assets/plants/chamomile/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/chamomile/HARVESTABLE": {
+   "path": "/assets/plants/chamomile/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/chamomile": {
+   "path": "/assets/seeds/chamomile.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/lavender/SEED": {
+   "path": "/assets/plants/lavender/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/lavender/SPROUT": {
+   "path": "/assets/plants/lavender/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/lavender/SEEDLING": {
+   "path": "/assets/plants/lavender/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/lavender/GROWING": {
+   "path": "/assets/plants/lavender/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/lavender/MATURE": {
+   "path": "/assets/plants/lavender/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/lavender/HARVESTABLE": {
+   "path": "/assets/plants/lavender/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/lavender": {
+   "path": "/assets/seeds/lavender.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/tomato/SEED": {
+   "path": "/assets/plants/tomato/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/tomato/SPROUT": {
+   "path": "/assets/plants/tomato/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/tomato/SEEDLING": {
+   "path": "/assets/plants/tomato/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/tomato/GROWING": {
+   "path": "/assets/plants/tomato/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/tomato/MATURE": {
+   "path": "/assets/plants/tomato/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/tomato/HARVESTABLE": {
+   "path": "/assets/plants/tomato/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/tomato": {
+   "path": "/assets/seeds/tomato.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/strawberry/SEED": {
+   "path": "/assets/plants/strawberry/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/strawberry/SPROUT": {
+   "path": "/assets/plants/strawberry/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/strawberry/SEEDLING": {
+   "path": "/assets/plants/strawberry/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/strawberry/GROWING": {
+   "path": "/assets/plants/strawberry/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/strawberry/MATURE": {
+   "path": "/assets/plants/strawberry/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/strawberry/HARVESTABLE": {
+   "path": "/assets/plants/strawberry/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/strawberry": {
+   "path": "/assets/seeds/strawberry.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/tulip/SEED": {
+   "path": "/assets/plants/tulip/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/tulip/SPROUT": {
+   "path": "/assets/plants/tulip/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/tulip/SEEDLING": {
+   "path": "/assets/plants/tulip/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/tulip/GROWING": {
+   "path": "/assets/plants/tulip/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/tulip/MATURE": {
+   "path": "/assets/plants/tulip/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/tulip/HARVESTABLE": {
+   "path": "/assets/plants/tulip/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/tulip": {
+   "path": "/assets/seeds/tulip.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/fern/SEED": {
+   "path": "/assets/plants/fern/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/fern/SPROUT": {
+   "path": "/assets/plants/fern/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/fern/SEEDLING": {
+   "path": "/assets/plants/fern/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/fern/GROWING": {
+   "path": "/assets/plants/fern/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/fern/MATURE": {
+   "path": "/assets/plants/fern/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/fern/HARVESTABLE": {
+   "path": "/assets/plants/fern/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/fern": {
+   "path": "/assets/seeds/fern.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/aloe/SEED": {
+   "path": "/assets/plants/aloe/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/aloe/SPROUT": {
+   "path": "/assets/plants/aloe/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/aloe/SEEDLING": {
+   "path": "/assets/plants/aloe/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/aloe/GROWING": {
+   "path": "/assets/plants/aloe/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/aloe/MATURE": {
+   "path": "/assets/plants/aloe/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/aloe/HARVESTABLE": {
+   "path": "/assets/plants/aloe/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/aloe": {
+   "path": "/assets/seeds/aloe.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/echeveria/SEED": {
+   "path": "/assets/plants/echeveria/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/echeveria/SPROUT": {
+   "path": "/assets/plants/echeveria/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/echeveria/SEEDLING": {
+   "path": "/assets/plants/echeveria/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/echeveria/GROWING": {
+   "path": "/assets/plants/echeveria/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/echeveria/MATURE": {
+   "path": "/assets/plants/echeveria/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/echeveria/HARVESTABLE": {
+   "path": "/assets/plants/echeveria/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/echeveria": {
+   "path": "/assets/seeds/echeveria.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/foxglove/SEED": {
+   "path": "/assets/plants/foxglove/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/foxglove/SPROUT": {
+   "path": "/assets/plants/foxglove/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/foxglove/SEEDLING": {
+   "path": "/assets/plants/foxglove/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/foxglove/GROWING": {
+   "path": "/assets/plants/foxglove/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/foxglove/MATURE": {
+   "path": "/assets/plants/foxglove/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/foxglove/HARVESTABLE": {
+   "path": "/assets/plants/foxglove/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/foxglove": {
+   "path": "/assets/seeds/foxglove.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/monstera/SEED": {
+   "path": "/assets/plants/monstera/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/monstera/SPROUT": {
+   "path": "/assets/plants/monstera/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/monstera/SEEDLING": {
+   "path": "/assets/plants/monstera/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/monstera/GROWING": {
+   "path": "/assets/plants/monstera/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/monstera/MATURE": {
+   "path": "/assets/plants/monstera/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/monstera/HARVESTABLE": {
+   "path": "/assets/plants/monstera/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/monstera": {
+   "path": "/assets/seeds/monstera.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/pineapple/SEED": {
+   "path": "/assets/plants/pineapple/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/pineapple/SPROUT": {
+   "path": "/assets/plants/pineapple/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/pineapple/SEEDLING": {
+   "path": "/assets/plants/pineapple/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/pineapple/GROWING": {
+   "path": "/assets/plants/pineapple/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/pineapple/MATURE": {
+   "path": "/assets/plants/pineapple/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/pineapple/HARVESTABLE": {
+   "path": "/assets/plants/pineapple/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/pineapple": {
+   "path": "/assets/seeds/pineapple.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/paradise/SEED": {
+   "path": "/assets/plants/paradise/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/paradise/SPROUT": {
+   "path": "/assets/plants/paradise/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/paradise/SEEDLING": {
+   "path": "/assets/plants/paradise/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/paradise/GROWING": {
+   "path": "/assets/plants/paradise/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/paradise/MATURE": {
+   "path": "/assets/plants/paradise/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/paradise/HARVESTABLE": {
+   "path": "/assets/plants/paradise/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/paradise": {
+   "path": "/assets/seeds/paradise.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/moth_orchid/SEED": {
+   "path": "/assets/plants/moth_orchid/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/moth_orchid/SPROUT": {
+   "path": "/assets/plants/moth_orchid/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/moth_orchid/SEEDLING": {
+   "path": "/assets/plants/moth_orchid/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/moth_orchid/GROWING": {
+   "path": "/assets/plants/moth_orchid/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/moth_orchid/MATURE": {
+   "path": "/assets/plants/moth_orchid/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/moth_orchid/HARVESTABLE": {
+   "path": "/assets/plants/moth_orchid/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/moth_orchid": {
+   "path": "/assets/seeds/moth_orchid.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/flytrap/SEED": {
+   "path": "/assets/plants/flytrap/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/flytrap/SPROUT": {
+   "path": "/assets/plants/flytrap/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/flytrap/SEEDLING": {
+   "path": "/assets/plants/flytrap/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/flytrap/GROWING": {
+   "path": "/assets/plants/flytrap/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/flytrap/MATURE": {
+   "path": "/assets/plants/flytrap/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/flytrap/HARVESTABLE": {
+   "path": "/assets/plants/flytrap/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/flytrap": {
+   "path": "/assets/seeds/flytrap.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/moonflower/SEED": {
+   "path": "/assets/plants/moonflower/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/moonflower/SPROUT": {
+   "path": "/assets/plants/moonflower/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/moonflower/SEEDLING": {
+   "path": "/assets/plants/moonflower/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/moonflower/GROWING": {
+   "path": "/assets/plants/moonflower/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/moonflower/MATURE": {
+   "path": "/assets/plants/moonflower/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/moonflower/HARVESTABLE": {
+   "path": "/assets/plants/moonflower/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/moonflower": {
+   "path": "/assets/seeds/moonflower.svg",
+   "width": 96,
+   "height": 120
+  },
+  "plants/ghost_orchid/SEED": {
+   "path": "/assets/plants/ghost_orchid/seed.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/ghost_orchid/SPROUT": {
+   "path": "/assets/plants/ghost_orchid/sprout.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/ghost_orchid/SEEDLING": {
+   "path": "/assets/plants/ghost_orchid/seedling.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/ghost_orchid/GROWING": {
+   "path": "/assets/plants/ghost_orchid/growing.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/ghost_orchid/MATURE": {
+   "path": "/assets/plants/ghost_orchid/mature.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "plants/ghost_orchid/HARVESTABLE": {
+   "path": "/assets/plants/ghost_orchid/harvestable.svg",
+   "width": 200,
+   "height": 260,
+   "originX": 0.5,
+   "originY": 0.9615384615384616
+  },
+  "seeds/ghost_orchid": {
+   "path": "/assets/seeds/ghost_orchid.svg",
+   "width": 96,
+   "height": 120
+  },
+  "pots/old_clay": {
+   "path": "/assets/pots/old_clay.svg",
+   "width": 120,
+   "height": 96
+  },
+  "pots/terracotta": {
+   "path": "/assets/pots/terracotta.svg",
+   "width": 120,
+   "height": 96
+  },
+  "pots/glazed": {
+   "path": "/assets/pots/glazed.svg",
+   "width": 120,
+   "height": 96
+  },
+  "pots/self_watering": {
+   "path": "/assets/pots/self_watering.svg",
+   "width": 120,
+   "height": 96
+  },
+  "pots/brass": {
+   "path": "/assets/pots/brass.svg",
+   "width": 120,
+   "height": 96
+  },
+  "decor/wicker_basket": {
+   "path": "/assets/decor/wicker_basket.svg",
+   "width": 80,
+   "height": 60
+  },
+  "decor/stool": {
+   "path": "/assets/decor/stool.svg",
+   "width": 70,
+   "height": 80
+  },
+  "decor/floor_pot": {
+   "path": "/assets/decor/floor_pot.svg",
+   "width": 90,
+   "height": 110
+  },
+  "decor/wall_shelf": {
+   "path": "/assets/decor/wall_shelf.svg",
+   "width": 140,
+   "height": 70
+  },
+  "decor/botanical_print": {
+   "path": "/assets/decor/botanical_print.svg",
+   "width": 90,
+   "height": 110
+  },
+  "decor/lantern": {
+   "path": "/assets/decor/lantern.svg",
+   "width": 60,
+   "height": 120
+  },
+  "decor/hanging_ivy": {
+   "path": "/assets/decor/hanging_ivy.svg",
+   "width": 90,
+   "height": 150
+  },
+  "decor/side_table": {
+   "path": "/assets/decor/side_table.svg",
+   "width": 130,
+   "height": 90
+  },
+  "decor/garden_bench": {
+   "path": "/assets/decor/garden_bench.svg",
+   "width": 170,
+   "height": 100
+  },
+  "decor/hanging_fern": {
+   "path": "/assets/decor/hanging_fern.svg",
+   "width": 110,
+   "height": 130
+  },
+  "decor/floor_lamp": {
+   "path": "/assets/decor/floor_lamp.svg",
+   "width": 60,
+   "height": 170
+  },
+  "decor/wall_clock": {
+   "path": "/assets/decor/wall_clock.svg",
+   "width": 90,
+   "height": 90
+  },
+  "decor/armchair": {
+   "path": "/assets/decor/armchair.svg",
+   "width": 130,
+   "height": 120
+  },
+  "decor/string_lights": {
+   "path": "/assets/decor/string_lights.svg",
+   "width": 260,
+   "height": 70
+  },
+  "decor/stone_frog": {
+   "path": "/assets/decor/stone_frog.svg",
+   "width": 80,
+   "height": 60
+  },
+  "decor/urn": {
+   "path": "/assets/decor/urn.svg",
+   "width": 110,
+   "height": 170
+  },
+  "decor/bird_cage": {
+   "path": "/assets/decor/bird_cage.svg",
+   "width": 90,
+   "height": 170
+  },
+  "decor/statue": {
+   "path": "/assets/decor/statue.svg",
+   "width": 110,
+   "height": 230
+  },
+  "equipment/grow_lamps": {
+   "path": "/assets/equipment/grow_lamps.svg",
+   "width": 200,
+   "height": 90
+  },
+  "equipment/heater": {
+   "path": "/assets/equipment/heater.svg",
+   "width": 110,
+   "height": 150
+  },
+  "equipment/rain_barrel": {
+   "path": "/assets/equipment/rain_barrel.svg",
+   "width": 90,
+   "height": 120
+  },
+  "equipment/hose": {
+   "path": "/assets/equipment/hose.svg",
+   "width": 110,
+   "height": 90
+  },
+  "equipment/fan": {
+   "path": "/assets/equipment/fan.svg",
+   "width": 160,
+   "height": 70
+  },
+  "equipment/mister": {
+   "path": "/assets/equipment/mister.svg",
+   "width": 240,
+   "height": 40
+  },
+  "world/tank": {
+   "path": "/assets/world/tank.svg",
+   "width": 110,
+   "height": 180
+  },
+  "items/fert_compost": {
+   "path": "/assets/items/fert_compost.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/fert_bone_meal": {
+   "path": "/assets/items/fert_bone_meal.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/fert_tonic": {
+   "path": "/assets/items/fert_tonic.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/fert_moon_feed": {
+   "path": "/assets/items/fert_moon_feed.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/tool_watering_can": {
+   "path": "/assets/items/tool_watering_can.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/tool_trowel": {
+   "path": "/assets/items/tool_trowel.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/upgrade_tank": {
+   "path": "/assets/items/upgrade_tank.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/upgrade_mix": {
+   "path": "/assets/items/upgrade_mix.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/upgrade_basket": {
+   "path": "/assets/items/upgrade_basket.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/upgrade_stall": {
+   "path": "/assets/items/upgrade_stall.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/upgrade_satchel": {
+   "path": "/assets/items/upgrade_satchel.svg",
+   "width": 64,
+   "height": 64
+  },
+  "items/upgrade_lens": {
+   "path": "/assets/items/upgrade_lens.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/coin": {
+   "path": "/assets/ui/coin.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/gem": {
+   "path": "/assets/ui/gem.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/xp": {
+   "path": "/assets/ui/xp.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/water": {
+   "path": "/assets/ui/water.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/heart": {
+   "path": "/assets/ui/heart.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/sun": {
+   "path": "/assets/ui/sun.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/clear": {
+   "path": "/assets/ui/clear.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/moon": {
+   "path": "/assets/ui/moon.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/cloudy": {
+   "path": "/assets/ui/cloudy.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/rain": {
+   "path": "/assets/ui/rain.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/thermometer": {
+   "path": "/assets/ui/thermometer.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/bulb": {
+   "path": "/assets/ui/bulb.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/hand": {
+   "path": "/assets/ui/hand.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/shop": {
+   "path": "/assets/ui/shop.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/bag": {
+   "path": "/assets/ui/bag.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/book": {
+   "path": "/assets/ui/book.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/trophy": {
+   "path": "/assets/ui/trophy.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/gear": {
+   "path": "/assets/ui/gear.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/hammer": {
+   "path": "/assets/ui/hammer.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/sparkle": {
+   "path": "/assets/ui/sparkle.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/brush": {
+   "path": "/assets/ui/brush.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/save": {
+   "path": "/assets/ui/save.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/sprout": {
+   "path": "/assets/ui/sprout.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/close": {
+   "path": "/assets/ui/close.svg",
+   "width": 64,
+   "height": 64
+  },
+  "ui/up": {
+   "path": "/assets/ui/up.svg",
+   "width": 64,
+   "height": 64
+  },
+  "world/bg1": {
+   "path": "/assets/world/background_1.svg",
+   "width": 1280,
+   "height": 720
+  },
+  "world/bg2": {
+   "path": "/assets/world/background_2.svg",
+   "width": 1760,
+   "height": 720
+  },
+  "world/bg3": {
+   "path": "/assets/world/background_3.svg",
+   "width": 2240,
+   "height": 720
+  },
+  "world/bg4": {
+   "path": "/assets/world/background_4.svg",
+   "width": 2880,
+   "height": 720
+  },
+  "world/bg5": {
+   "path": "/assets/world/background_5.svg",
+   "width": 3520,
+   "height": 720
+  },
+  "world/hills": {
+   "path": "/assets/world/hills.svg",
+   "width": 1600,
+   "height": 420
+  },
+  "world/cloud1": {
+   "path": "/assets/world/cloud1.svg",
+   "width": 320,
+   "height": 110
+  },
+  "world/cloud2": {
+   "path": "/assets/world/cloud2.svg",
+   "width": 320,
+   "height": 110
+  },
+  "fx/glow": {
+   "path": "/assets/fx/glow.svg",
+   "width": 256,
+   "height": 256
+  },
+  "fx/beam": {
+   "path": "/assets/fx/beam.svg",
+   "width": 256,
+   "height": 720
+  },
+  "fx/mote": {
+   "path": "/assets/fx/mote.svg",
+   "width": 32,
+   "height": 32
+  },
+  "fx/drop": {
+   "path": "/assets/fx/drop.svg",
+   "width": 32,
+   "height": 32
+  },
+  "fx/spark": {
+   "path": "/assets/fx/spark.svg",
+   "width": 32,
+   "height": 32
+  },
+  "fx/leaf": {
+   "path": "/assets/fx/leaf.svg",
+   "width": 32,
+   "height": 32
+  },
+  "fx/butterfly1": {
+   "path": "/assets/fx/butterfly1.svg",
+   "width": 48,
+   "height": 40
+  },
+  "fx/butterfly2": {
+   "path": "/assets/fx/butterfly2.svg",
+   "width": 48,
+   "height": 40
+  }
+ }
+}

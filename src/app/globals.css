@@ -1,0 +1,128 @@
+:root {
+  /* Paper, wood and leaf: everything in the UI is mixed from these. */
+  --paper: #f6edd8;
+  --paper-deep: #ecdfc2;
+  --paper-edge: #d9c7a0;
+  --ink: #3b2f22;
+  --ink-soft: #6b5a44;
+  --ink-faint: #94826a;
+  --wood: #6e4d2e;
+  --wood-deep: #4a3320;
+  --wood-light: #a07a4e;
+  --leaf: #4f7f45;
+  --leaf-deep: #38603a;
+  --leaf-pale: #dbe6bd;
+  --coin: #c7912a;
+  --gem: #2f946c;
+  --water: #3f88ad;
+  --berry: #b5473c;
+  --sun: #f0b94a;
+
+  --rarity-common: #7f7560;
+  --rarity-uncommon: #4f7f45;
+  --rarity-rare: #2f7f8f;
+  --rarity-epic: #8a4f9e;
+  --rarity-legendary: #b98318;
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --shadow-panel: 0 18px 50px rgb(35 24 12 / 0.42), 0 2px 0 rgb(255 255 255 / 0.5) inset;
+  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.65) inset, 0 2px 5px rgb(60 40 15 / 0.16);
+
+  --font-display-stack: var(--font-display), 'Georgia', serif;
+  --font-body-stack: var(--font-body), 'Trebuchet MS', sans-serif;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #2b3f30;
+  color: var(--ink);
+  font-family: var(--font-body-stack);
+  font-size: 15px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+  touch-action: manipulation;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display-stack);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.15;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+select,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 3px solid var(--sun);
+  outline-offset: 2px;
+}
+
+img {
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Scrollbars that belong on paper. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--paper-edge) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+[data-reduced-motion='true'] *,
+[data-reduced-motion='true'] *::before,
+[data-reduced-motion='true'] *::after {
+  animation-duration: 0.01ms !important;
+  transition-duration: 0.01ms !important;
+}

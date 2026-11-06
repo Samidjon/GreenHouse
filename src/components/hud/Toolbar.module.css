@@ -1,0 +1,127 @@
+.bar {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: max(8px, var(--safe-bottom));
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 6px;
+  pointer-events: none;
+}
+
+.group {
+  pointer-events: auto;
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-radius: 14px;
+  background: linear-gradient(#7a5733, #5f4227);
+  box-shadow: 0 3px 0 var(--wood-deep), 0 5px 14px rgb(30 20 8 / 0.34), inset 0 1px 0 rgb(255 255 255 / 0.2);
+}
+
+.btn {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 1px;
+  flex: none;
+  width: 66px;
+  height: 58px;
+  border: 0;
+  border-radius: 10px;
+  color: #f6ecd2;
+  background: transparent;
+  transition: background 0.14s ease, transform 0.12s ease;
+}
+
+.btn:hover {
+  background: rgb(255 240 200 / 0.14);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.on,
+.on:hover {
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: inset 0 -2px 0 var(--paper-edge);
+}
+
+.label {
+  font-size: 11.5px;
+  font-weight: 800;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.key {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  font: 700 9.5px var(--font-body-stack);
+  opacity: 0.55;
+}
+
+/* Touch screens don't have these keys. */
+@media (hover: none) {
+  .key {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .bar {
+    justify-content: center;
+  }
+
+  .btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .btn img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .label {
+    font-size: 10.5px;
+  }
+
+  .key {
+    display: none;
+  }
+}
+
+/* Seven buttons should fit a phone's width with no sideways scrolling. */
+@media (max-width: 480px) {
+  .btn {
+    width: calc((100vw - 34px) / 7);
+    min-width: 44px;
+  }
+
+  .label {
+    font-size: 9.5px;
+  }
+}
+
+/* Russian labels are long: keep every word inside its button on a phone. */
+@media (max-width: 480px) {
+  .group {
+    gap: 0;
+    padding: 4px 2px;
+  }
+
+  .label {
+    font-size: 10px;
+  }
+}

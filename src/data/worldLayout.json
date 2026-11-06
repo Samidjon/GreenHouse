@@ -1,0 +1,352 @@
+{
+  "height": 720,
+  "floorY": 650,
+  "wallBand": {
+    "top": 170,
+    "bottom": 450
+  },
+  "hangingY": 72,
+  "widths": {
+    "1": 1280,
+    "2": 1760,
+    "3": 2240,
+    "4": 2880,
+    "5": 3520
+  },
+  "slots": [
+    {
+      "id": "a1",
+      "level": 1,
+      "x": 390,
+      "y": 345,
+      "surface": "shelf"
+    },
+    {
+      "id": "a2",
+      "level": 1,
+      "x": 550,
+      "y": 345,
+      "surface": "shelf"
+    },
+    {
+      "id": "a3",
+      "level": 1,
+      "x": 710,
+      "y": 345,
+      "surface": "shelf"
+    },
+    {
+      "id": "a4",
+      "level": 1,
+      "x": 390,
+      "y": 560,
+      "surface": "bench"
+    },
+    {
+      "id": "a5",
+      "level": 1,
+      "x": 550,
+      "y": 560,
+      "surface": "bench"
+    },
+    {
+      "id": "a6",
+      "level": 1,
+      "x": 710,
+      "y": 560,
+      "surface": "bench"
+    },
+    {
+      "id": "b1",
+      "level": 2,
+      "x": 1400,
+      "y": 345,
+      "surface": "shelf"
+    },
+    {
+      "id": "b2",
+      "level": 2,
+      "x": 1340,
+      "y": 590,
+      "surface": "planter"
+    },
+    {
+      "id": "b3",
+      "level": 2,
+      "x": 1490,
+      "y": 590,
+      "surface": "planter"
+    },
+    {
+      "id": "b4",
+      "level": 2,
+      "x": 1640,
+      "y": 590,
+      "surface": "planter"
+    },
+    {
+      "id": "c1",
+      "level": 3,
+      "x": 1850,
+      "y": 345,
+      "surface": "shelf"
+    },
+    {
+      "id": "c2",
+      "level": 3,
+      "x": 2000,
+      "y": 345,
+      "surface": "shelf"
+    },
+    {
+      "id": "c3",
+      "level": 3,
+      "x": 2150,
+      "y": 345,
+      "surface": "shelf"
+    },
+    {
+      "id": "c4",
+      "level": 3,
+      "x": 1850,
+      "y": 560,
+      "surface": "bench"
+    },
+    {
+      "id": "c5",
+      "level": 3,
+      "x": 2000,
+      "y": 560,
+      "surface": "bench"
+    },
+    {
+      "id": "c6",
+      "level": 3,
+      "x": 2150,
+      "y": 560,
+      "surface": "bench"
+    },
+    {
+      "id": "d1",
+      "level": 4,
+      "x": 2320,
+      "y": 390,
+      "surface": "terrace"
+    },
+    {
+      "id": "d2",
+      "level": 4,
+      "x": 2470,
+      "y": 390,
+      "surface": "terrace"
+    },
+    {
+      "id": "d3",
+      "level": 4,
+      "x": 2620,
+      "y": 390,
+      "surface": "terrace"
+    },
+    {
+      "id": "d4",
+      "level": 4,
+      "x": 2770,
+      "y": 390,
+      "surface": "terrace"
+    },
+    {
+      "id": "d5",
+      "level": 4,
+      "x": 2320,
+      "y": 600,
+      "surface": "terrace"
+    },
+    {
+      "id": "d6",
+      "level": 4,
+      "x": 2470,
+      "y": 600,
+      "surface": "terrace"
+    },
+    {
+      "id": "d7",
+      "level": 4,
+      "x": 2620,
+      "y": 600,
+      "surface": "terrace"
+    },
+    {
+      "id": "d8",
+      "level": 4,
+      "x": 2770,
+      "y": 600,
+      "surface": "terrace"
+    },
+    {
+      "id": "e1",
+      "level": 5,
+      "x": 2960,
+      "y": 345,
+      "surface": "stand"
+    },
+    {
+      "id": "e2",
+      "level": 5,
+      "x": 3090,
+      "y": 345,
+      "surface": "stand"
+    },
+    {
+      "id": "e3",
+      "level": 5,
+      "x": 3310,
+      "y": 345,
+      "surface": "stand"
+    },
+    {
+      "id": "e4",
+      "level": 5,
+      "x": 3440,
+      "y": 345,
+      "surface": "stand"
+    },
+    {
+      "id": "e5",
+      "level": 5,
+      "x": 2960,
+      "y": 560,
+      "surface": "stand"
+    },
+    {
+      "id": "e6",
+      "level": 5,
+      "x": 3090,
+      "y": 560,
+      "surface": "stand"
+    },
+    {
+      "id": "e7",
+      "level": 5,
+      "x": 3310,
+      "y": 560,
+      "surface": "stand"
+    },
+    {
+      "id": "e8",
+      "level": 5,
+      "x": 3440,
+      "y": 560,
+      "surface": "stand"
+    }
+  ],
+  "props": {
+    "door": {
+      "x": 40,
+      "y": 300,
+      "w": 130,
+      "h": 350
+    },
+    "tank": {
+      "x": 192,
+      "y": 470,
+      "w": 110,
+      "h": 180
+    },
+    "table": {
+      "x": 860,
+      "y": 500,
+      "w": 230,
+      "h": 150
+    }
+  },
+  "blockers": [
+    {
+      "id": "door",
+      "level": 1,
+      "x": 40,
+      "y": 300,
+      "w": 130,
+      "h": 350
+    },
+    {
+      "id": "tank",
+      "level": 1,
+      "x": 192,
+      "y": 470,
+      "w": 110,
+      "h": 180
+    },
+    {
+      "id": "table",
+      "level": 1,
+      "x": 860,
+      "y": 500,
+      "w": 230,
+      "h": 150
+    },
+    {
+      "id": "window",
+      "level": 1,
+      "x": 1098,
+      "y": 158,
+      "w": 154,
+      "h": 244
+    },
+    {
+      "id": "shelf-a",
+      "level": 1,
+      "x": 300,
+      "y": 345,
+      "w": 500,
+      "h": 22
+    },
+    {
+      "id": "shelf-b",
+      "level": 2,
+      "x": 1310,
+      "y": 345,
+      "w": 180,
+      "h": 22
+    },
+    {
+      "id": "shelf-c",
+      "level": 3,
+      "x": 1775,
+      "y": 345,
+      "w": 450,
+      "h": 22
+    },
+    {
+      "id": "terrace-upper",
+      "level": 4,
+      "x": 2245,
+      "y": 390,
+      "w": 600,
+      "h": 120
+    },
+    {
+      "id": "stand-left",
+      "level": 5,
+      "x": 2890,
+      "y": 345,
+      "w": 270,
+      "h": 305
+    },
+    {
+      "id": "stand-right",
+      "level": 5,
+      "x": 3240,
+      "y": 345,
+      "w": 270,
+      "h": 305
+    },
+    {
+      "id": "fountain",
+      "level": 5,
+      "x": 3160,
+      "y": 430,
+      "w": 80,
+      "h": 220
+    }
+  ]
+}

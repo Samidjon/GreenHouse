@@ -1,0 +1,11 @@
+.host {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #9fc3c7;
+  touch-action: none;
+}
+
+.host canvas {
+  display: block;
+}
